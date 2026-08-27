@@ -179,7 +179,7 @@ Then open `http://localhost:8501` in your browser.
 ## Authors
 
 - **Anirudh Chaurasia** — [github.com/ANIRUDH-Main](https://github.com/ANIRUDH-Main) · [LinkedIn](https://linkedin.com/in/anirudh-chaurasia)
-- **[Your Friend's Name]** — [GitHub](#) · [LinkedIn](#)
+- **Vibhor Kohli** — [Leetcode](https://leetcode.com/u/Vibhor__K/) · [LinkedIn](#)
 
 ---
 

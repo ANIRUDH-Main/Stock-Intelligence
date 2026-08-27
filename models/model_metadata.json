@@ -1,0 +1,2552 @@
+{
+  "generated_at": "2026-05-14T20:15:40.780539+00:00",
+  "tickers_trained": [
+    "AAPL",
+    "AMC",
+    "AMD",
+    "AMZN",
+    "ARKK",
+    "BB",
+    "BBBY",
+    "COIN",
+    "DIS",
+    "GME",
+    "GOOGL",
+    "HOOD",
+    "INTC",
+    "JNJ",
+    "JPM",
+    "LYFT",
+    "MA",
+    "META",
+    "MSFT",
+    "NFLX",
+    "NVDA",
+    "PYPL",
+    "QQQ",
+    "SHOP",
+    "SNAP",
+    "SPOT",
+    "SPY",
+    "TSLA",
+    "UBER",
+    "UNH",
+    "V",
+    "WMT",
+    "XOM"
+  ],
+  "tickers_failed": [
+    "BRK",
+    "SQ"
+  ],
+  "predictions": {
+    "AAPL": {
+      "ticker": "AAPL",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\AAPL_best_model.pkl",
+      "current_price": 298.87,
+      "predicted_next_close": 293.196,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 7.4714,
+          "mae": 5.2886,
+          "r2": 0.7545,
+          "mape": 1.9225
+        },
+        "RandomForest": {
+          "rmse": 5.9654,
+          "mae": 4.2649,
+          "r2": 0.8435,
+          "mape": 1.5472
+        },
+        "GradientBoosting": {
+          "rmse": 6.9758,
+          "mae": 5.1607,
+          "r2": 0.7859,
+          "mape": 1.8789
+        },
+        "Ridge": {
+          "rmse": 5.1208,
+          "mae": 4.0077,
+          "r2": 0.8847,
+          "mape": 1.473
+        },
+        "SVR": {
+          "rmse": 10.0381,
+          "mae": 6.8327,
+          "r2": 0.5568,
+          "mape": 2.4759
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 5.1208,
+        "mae": 4.0077,
+        "r2": 0.8847,
+        "mape": 1.473
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:14:31.010305+00:00"
+    },
+    "AMC": {
+      "ticker": "AMC",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\AMC_best_model.pkl",
+      "current_price": 1.33,
+      "predicted_next_close": 1.2805,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 0.2228,
+          "mae": 0.1753,
+          "r2": 0.3273,
+          "mape": 12.2943
+        },
+        "RandomForest": {
+          "rmse": 0.1587,
+          "mae": 0.1299,
+          "r2": 0.6587,
+          "mape": 9.3396
+        },
+        "GradientBoosting": {
+          "rmse": 0.1593,
+          "mae": 0.1304,
+          "r2": 0.6562,
+          "mape": 9.3985
+        },
+        "Ridge": {
+          "rmse": 0.117,
+          "mae": 0.0887,
+          "r2": 0.8145,
+          "mape": 6.0046
+        },
+        "SVR": {
+          "rmse": 0.5701,
+          "mae": 0.529,
+          "r2": -3.4032,
+          "mape": 37.9324
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 0.117,
+        "mae": 0.0887,
+        "r2": 0.8145,
+        "mape": 6.0046
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:14:32.201983+00:00"
+    },
+    "AMD": {
+      "ticker": "AMD",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\AMD_best_model.pkl",
+      "current_price": 445.5,
+      "predicted_next_close": 423.9305,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 107.6694,
+          "mae": 69.5934,
+          "r2": -0.6095,
+          "mape": 18.5023
+        },
+        "RandomForest": {
+          "rmse": 93.4069,
+          "mae": 60.152,
+          "r2": -0.2113,
+          "mape": 16.0002
+        },
+        "GradientBoosting": {
+          "rmse": 101.2436,
+          "mae": 65.3709,
+          "r2": -0.4231,
+          "mape": 17.3843
+        },
+        "Ridge": {
+          "rmse": 24.084,
+          "mae": 16.6313,
+          "r2": 0.9195,
+          "mape": 4.9995
+        },
+        "SVR": {
+          "rmse": 114.9605,
+          "mae": 76.3128,
+          "r2": -0.8348,
+          "mape": 20.5791
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 24.084,
+        "mae": 16.6313,
+        "r2": 0.9195,
+        "mape": 4.9995
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:14:33.409807+00:00"
+    },
+    "AMZN": {
+      "ticker": "AMZN",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\AMZN_best_model.pkl",
+      "current_price": 270.13,
+      "predicted_next_close": 262.7941,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 18.6524,
+          "mae": 15.1969,
+          "r2": 0.483,
+          "mape": 6.0275
+        },
+        "RandomForest": {
+          "rmse": 16.2068,
+          "mae": 12.5428,
+          "r2": 0.6097,
+          "mape": 4.9481
+        },
+        "GradientBoosting": {
+          "rmse": 16.707,
+          "mae": 13.534,
+          "r2": 0.5852,
+          "mape": 5.3881
+        },
+        "Ridge": {
+          "rmse": 6.7487,
+          "mae": 5.6933,
+          "r2": 0.9323,
+          "mape": 2.3652
+        },
+        "SVR": {
+          "rmse": 28.2051,
+          "mae": 23.433,
+          "r2": -0.1821,
+          "mape": 9.2452
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 6.7487,
+        "mae": 5.6933,
+        "r2": 0.9323,
+        "mape": 2.3652
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:14:34.982763+00:00"
+    },
+    "ARKK": {
+      "ticker": "ARKK",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\ARKK_best_model.pkl",
+      "current_price": 78.05,
+      "predicted_next_close": 77.6917,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 3.0808,
+          "mae": 2.5841,
+          "r2": 0.5607,
+          "mape": 3.6254
+        },
+        "RandomForest": {
+          "rmse": 2.8434,
+          "mae": 2.3583,
+          "r2": 0.6258,
+          "mape": 3.2931
+        },
+        "GradientBoosting": {
+          "rmse": 2.7991,
+          "mae": 2.3323,
+          "r2": 0.6374,
+          "mape": 3.2426
+        },
+        "Ridge": {
+          "rmse": 1.889,
+          "mae": 1.5524,
+          "r2": 0.8349,
+          "mape": 2.1341
+        },
+        "SVR": {
+          "rmse": 3.196,
+          "mae": 2.5454,
+          "r2": 0.5273,
+          "mape": 3.55
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 1.889,
+        "mae": 1.5524,
+        "r2": 0.8349,
+        "mape": 2.1341
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:14:36.730106+00:00"
+    },
+    "BB": {
+      "ticker": "BB",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\BB_best_model.pkl",
+      "current_price": 6.1,
+      "predicted_next_close": 5.991,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 0.8151,
+          "mae": 0.5808,
+          "r2": 0.4786,
+          "mape": 10.7182
+        },
+        "RandomForest": {
+          "rmse": 0.7003,
+          "mae": 0.5015,
+          "r2": 0.6151,
+          "mape": 9.3731
+        },
+        "GradientBoosting": {
+          "rmse": 0.7251,
+          "mae": 0.5213,
+          "r2": 0.5874,
+          "mape": 9.6822
+        },
+        "Ridge": {
+          "rmse": 0.2182,
+          "mae": 0.1554,
+          "r2": 0.9626,
+          "mape": 3.179
+        },
+        "SVR": {
+          "rmse": 1.0268,
+          "mae": 0.7764,
+          "r2": 0.1726,
+          "mape": 14.6351
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 0.2182,
+        "mae": 0.1554,
+        "r2": 0.9626,
+        "mape": 3.179
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:14:38.370592+00:00"
+    },
+    "BBBY": {
+      "ticker": "BBBY",
+      "best_model": "XGBoost",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\BBBY_best_model.pkl",
+      "current_price": 4.73,
+      "predicted_next_close": 4.9313,
+      "predicted_direction": "up",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 0.2912,
+          "mae": 0.2311,
+          "r2": 0.5644,
+          "mape": 4.5848
+        },
+        "RandomForest": {
+          "rmse": 0.3071,
+          "mae": 0.2485,
+          "r2": 0.5157,
+          "mape": 4.9242
+        },
+        "GradientBoosting": {
+          "rmse": 0.2982,
+          "mae": 0.2318,
+          "r2": 0.5434,
+          "mape": 4.5727
+        },
+        "Ridge": {
+          "rmse": 0.5037,
+          "mae": 0.3619,
+          "r2": -0.303,
+          "mape": 7.3304
+        },
+        "SVR": {
+          "rmse": 0.9859,
+          "mae": 0.6365,
+          "r2": -3.9932,
+          "mape": 12.7337
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 0.2912,
+        "mae": 0.2311,
+        "r2": 0.5644,
+        "mape": 4.5848
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:14:40.032766+00:00"
+    },
+    "COIN": {
+      "ticker": "COIN",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\COIN_best_model.pkl",
+      "current_price": 201.8,
+      "predicted_next_close": 200.2222,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 15.3808,
+          "mae": 12.5023,
+          "r2": -0.0923,
+          "mape": 6.9541
+        },
+        "RandomForest": {
+          "rmse": 13.5246,
+          "mae": 10.5467,
+          "r2": 0.1554,
+          "mape": 5.8863
+        },
+        "GradientBoosting": {
+          "rmse": 14.8947,
+          "mae": 11.6848,
+          "r2": -0.0243,
+          "mape": 6.5216
+        },
+        "Ridge": {
+          "rmse": 9.5817,
+          "mae": 7.7739,
+          "r2": 0.5761,
+          "mape": 4.0786
+        },
+        "SVR": {
+          "rmse": 26.5169,
+          "mae": 24.0658,
+          "r2": -2.2466,
+          "mape": 13.0417
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 9.5817,
+        "mae": 7.7739,
+        "r2": 0.5761,
+        "mape": 4.0786
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:14:42.788248+00:00"
+    },
+    "DIS": {
+      "ticker": "DIS",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\DIS_best_model.pkl",
+      "current_price": 104.9,
+      "predicted_next_close": 105.7608,
+      "predicted_direction": "up",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 3.228,
+          "mae": 2.5367,
+          "r2": 0.3826,
+          "mape": 2.5609
+        },
+        "RandomForest": {
+          "rmse": 2.8972,
+          "mae": 2.3031,
+          "r2": 0.5026,
+          "mape": 2.317
+        },
+        "GradientBoosting": {
+          "rmse": 3.2282,
+          "mae": 2.6754,
+          "r2": 0.3825,
+          "mape": 2.6866
+        },
+        "Ridge": {
+          "rmse": 2.2182,
+          "mae": 1.7025,
+          "r2": 0.7084,
+          "mape": 1.6711
+        },
+        "SVR": {
+          "rmse": 8.0209,
+          "mae": 7.3734,
+          "r2": -2.8122,
+          "mape": 7.3516
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 2.2182,
+        "mae": 1.7025,
+        "r2": 0.7084,
+        "mape": 1.6711
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:14:45.310941+00:00"
+    },
+    "GME": {
+      "ticker": "GME",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\GME_best_model.pkl",
+      "current_price": 22.08,
+      "predicted_next_close": 22.1169,
+      "predicted_direction": "up",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 0.7283,
+          "mae": 0.5346,
+          "r2": 0.589,
+          "mape": 2.228
+        },
+        "RandomForest": {
+          "rmse": 0.7066,
+          "mae": 0.5422,
+          "r2": 0.6132,
+          "mape": 2.2587
+        },
+        "GradientBoosting": {
+          "rmse": 0.7563,
+          "mae": 0.5682,
+          "r2": 0.5569,
+          "mape": 2.3736
+        },
+        "Ridge": {
+          "rmse": 0.699,
+          "mae": 0.5418,
+          "r2": 0.6215,
+          "mape": 2.2538
+        },
+        "SVR": {
+          "rmse": 0.8654,
+          "mae": 0.7133,
+          "r2": 0.4198,
+          "mape": 2.9751
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 0.699,
+        "mae": 0.5418,
+        "r2": 0.6215,
+        "mape": 2.2538
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:14:47.034930+00:00"
+    },
+    "GOOGL": {
+      "ticker": "GOOGL",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\GOOGL_best_model.pkl",
+      "current_price": 402.62,
+      "predicted_next_close": 395.2542,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 34.6194,
+          "mae": 23.6869,
+          "r2": 0.2358,
+          "mape": 6.4914
+        },
+        "RandomForest": {
+          "rmse": 30.5739,
+          "mae": 20.4387,
+          "r2": 0.404,
+          "mape": 5.5701
+        },
+        "GradientBoosting": {
+          "rmse": 31.6287,
+          "mae": 21.4298,
+          "r2": 0.3621,
+          "mape": 5.8581
+        },
+        "Ridge": {
+          "rmse": 8.9286,
+          "mae": 6.4799,
+          "r2": 0.9492,
+          "mape": 1.8996
+        },
+        "SVR": {
+          "rmse": 55.3897,
+          "mae": 40.5269,
+          "r2": -0.9563,
+          "mape": 11.0407
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 8.9286,
+        "mae": 6.4799,
+        "r2": 0.9492,
+        "mape": 1.8996
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:14:48.872506+00:00"
+    },
+    "HOOD": {
+      "ticker": "HOOD",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\HOOD_best_model.pkl",
+      "current_price": 76.75,
+      "predicted_next_close": 77.4509,
+      "predicted_direction": "up",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 13.1643,
+          "mae": 12.0776,
+          "r2": -2.5963,
+          "mape": 16.4991
+        },
+        "RandomForest": {
+          "rmse": 9.4573,
+          "mae": 8.1693,
+          "r2": -0.8561,
+          "mape": 11.2986
+        },
+        "GradientBoosting": {
+          "rmse": 10.889,
+          "mae": 9.5554,
+          "r2": -1.4606,
+          "mape": 13.1811
+        },
+        "Ridge": {
+          "rmse": 3.8089,
+          "mae": 3.0349,
+          "r2": 0.6989,
+          "mape": 3.9644
+        },
+        "SVR": {
+          "rmse": 10.2364,
+          "mae": 9.2842,
+          "r2": -1.1745,
+          "mape": 12.2948
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 3.8089,
+        "mae": 3.0349,
+        "r2": 0.6989,
+        "mape": 3.9644
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:14:50.761519+00:00"
+    },
+    "INTC": {
+      "ticker": "INTC",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\INTC_best_model.pkl",
+      "current_price": 120.29,
+      "predicted_next_close": 117.3281,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 38.0817,
+          "mae": 27.6918,
+          "r2": -0.9742,
+          "mape": 30.0646
+        },
+        "RandomForest": {
+          "rmse": 35.3881,
+          "mae": 25.2913,
+          "r2": -0.7048,
+          "mape": 27.1848
+        },
+        "GradientBoosting": {
+          "rmse": 36.7734,
+          "mae": 26.5971,
+          "r2": -0.8409,
+          "mape": 28.8009
+        },
+        "Ridge": {
+          "rmse": 7.1457,
+          "mae": 4.928,
+          "r2": 0.9305,
+          "mape": 6.0219
+        },
+        "SVR": {
+          "rmse": 46.1477,
+          "mae": 34.6108,
+          "r2": -1.8991,
+          "mape": 38.278
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 7.1457,
+        "mae": 4.928,
+        "r2": 0.9305,
+        "mape": 6.0219
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:14:52.468200+00:00"
+    },
+    "JNJ": {
+      "ticker": "JNJ",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\JNJ_best_model.pkl",
+      "current_price": 230.42,
+      "predicted_next_close": 233.4474,
+      "predicted_direction": "up",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 9.267,
+          "mae": 7.258,
+          "r2": -0.7778,
+          "mape": 3.1857
+        },
+        "RandomForest": {
+          "rmse": 6.0059,
+          "mae": 4.8558,
+          "r2": 0.2533,
+          "mape": 2.1209
+        },
+        "GradientBoosting": {
+          "rmse": 5.0035,
+          "mae": 4.0757,
+          "r2": 0.4817,
+          "mape": 1.7734
+        },
+        "Ridge": {
+          "rmse": 3.9799,
+          "mae": 3.3307,
+          "r2": 0.6721,
+          "mape": 1.4446
+        },
+        "SVR": {
+          "rmse": 15.135,
+          "mae": 13.9382,
+          "r2": -3.7422,
+          "mape": 5.9488
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 3.9799,
+        "mae": 3.3307,
+        "r2": 0.6721,
+        "mape": 1.4446
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:14:54.908636+00:00"
+    },
+    "JPM": {
+      "ticker": "JPM",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\JPM_best_model.pkl",
+      "current_price": 300.25,
+      "predicted_next_close": 299.3261,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 4.3532,
+          "mae": 3.3294,
+          "r2": 0.8184,
+          "mape": 1.0982
+        },
+        "RandomForest": {
+          "rmse": 4.1231,
+          "mae": 3.1069,
+          "r2": 0.8371,
+          "mape": 1.0294
+        },
+        "GradientBoosting": {
+          "rmse": 4.2532,
+          "mae": 3.2483,
+          "r2": 0.8266,
+          "mape": 1.0731
+        },
+        "Ridge": {
+          "rmse": 4.1091,
+          "mae": 3.2326,
+          "r2": 0.8382,
+          "mape": 1.0677
+        },
+        "SVR": {
+          "rmse": 6.0461,
+          "mae": 4.8089,
+          "r2": 0.6496,
+          "mape": 1.5962
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 4.1091,
+        "mae": 3.2326,
+        "r2": 0.8382,
+        "mape": 1.0677
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:14:56.928856+00:00"
+    },
+    "LYFT": {
+      "ticker": "LYFT",
+      "best_model": "RandomForest",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\LYFT_best_model.pkl",
+      "current_price": 13.68,
+      "predicted_next_close": 14.0788,
+      "predicted_direction": "up",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 0.8134,
+          "mae": 0.7078,
+          "r2": -1.0278,
+          "mape": 5.2007
+        },
+        "RandomForest": {
+          "rmse": 0.5116,
+          "mae": 0.4139,
+          "r2": 0.1977,
+          "mape": 3.0418
+        },
+        "GradientBoosting": {
+          "rmse": 0.5433,
+          "mae": 0.3881,
+          "r2": 0.0952,
+          "mape": 2.8224
+        },
+        "Ridge": {
+          "rmse": 0.5901,
+          "mae": 0.4963,
+          "r2": -0.0674,
+          "mape": 3.5758
+        },
+        "SVR": {
+          "rmse": 1.6953,
+          "mae": 1.4839,
+          "r2": -7.8091,
+          "mape": 10.658
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 0.5116,
+        "mae": 0.4139,
+        "r2": 0.1977,
+        "mape": 3.0418
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:14:59.162053+00:00"
+    },
+    "MA": {
+      "ticker": "MA",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\MA_best_model.pkl",
+      "current_price": 490.64,
+      "predicted_next_close": 487.4188,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 12.9617,
+          "mae": 10.933,
+          "r2": -0.8461,
+          "mape": 2.1999
+        },
+        "RandomForest": {
+          "rmse": 10.4526,
+          "mae": 8.6361,
+          "r2": -0.2005,
+          "mape": 1.7338
+        },
+        "GradientBoosting": {
+          "rmse": 11.2305,
+          "mae": 9.2382,
+          "r2": -0.3859,
+          "mape": 1.8545
+        },
+        "Ridge": {
+          "rmse": 8.7239,
+          "mae": 6.7105,
+          "r2": 0.1637,
+          "mape": 1.3378
+        },
+        "SVR": {
+          "rmse": 23.2576,
+          "mae": 21.0703,
+          "r2": -4.9436,
+          "mape": 4.2116
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 8.7239,
+        "mae": 6.7105,
+        "r2": 0.1637,
+        "mape": 1.3378
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:02.333417+00:00"
+    },
+    "META": {
+      "ticker": "META",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\META_best_model.pkl",
+      "current_price": 616.63,
+      "predicted_next_close": 617.3709,
+      "predicted_direction": "up",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 36.613,
+          "mae": 29.2573,
+          "r2": 0.2049,
+          "mape": 4.9506
+        },
+        "RandomForest": {
+          "rmse": 32.2391,
+          "mae": 22.648,
+          "r2": 0.3836,
+          "mape": 3.8745
+        },
+        "GradientBoosting": {
+          "rmse": 35.4703,
+          "mae": 27.0582,
+          "r2": 0.2538,
+          "mape": 4.6008
+        },
+        "Ridge": {
+          "rmse": 17.5527,
+          "mae": 12.8193,
+          "r2": 0.8173,
+          "mape": 2.1271
+        },
+        "SVR": {
+          "rmse": 45.65,
+          "mae": 34.0267,
+          "r2": -0.236,
+          "mape": 5.8017
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 17.5527,
+        "mae": 12.8193,
+        "r2": 0.8173,
+        "mape": 2.1271
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:05.482180+00:00"
+    },
+    "MSFT": {
+      "ticker": "MSFT",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\MSFT_best_model.pkl",
+      "current_price": 405.21,
+      "predicted_next_close": 405.6669,
+      "predicted_direction": "up",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 20.6294,
+          "mae": 16.6939,
+          "r2": 0.1766,
+          "mape": 4.3568
+        },
+        "RandomForest": {
+          "rmse": 19.6489,
+          "mae": 16.3267,
+          "r2": 0.253,
+          "mape": 4.2388
+        },
+        "GradientBoosting": {
+          "rmse": 18.2405,
+          "mae": 14.9151,
+          "r2": 0.3563,
+          "mape": 3.8797
+        },
+        "Ridge": {
+          "rmse": 12.6157,
+          "mae": 9.5651,
+          "r2": 0.6921,
+          "mape": 2.3455
+        },
+        "SVR": {
+          "rmse": 35.5162,
+          "mae": 31.6155,
+          "r2": -1.4406,
+          "mape": 8.1643
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 12.6157,
+        "mae": 9.5651,
+        "r2": 0.6921,
+        "mape": 2.3455
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:07.943811+00:00"
+    },
+    "NFLX": {
+      "ticker": "NFLX",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\NFLX_best_model.pkl",
+      "current_price": 87.56,
+      "predicted_next_close": 88.6081,
+      "predicted_direction": "up",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 3.3027,
+          "mae": 2.5547,
+          "r2": 0.6505,
+          "mape": 2.659
+        },
+        "RandomForest": {
+          "rmse": 4.0848,
+          "mae": 3.5275,
+          "r2": 0.4653,
+          "mape": 3.682
+        },
+        "GradientBoosting": {
+          "rmse": 4.84,
+          "mae": 4.3731,
+          "r2": 0.2493,
+          "mape": 4.6084
+        },
+        "Ridge": {
+          "rmse": 2.7303,
+          "mae": 2.0826,
+          "r2": 0.7611,
+          "mape": 2.2378
+        },
+        "SVR": {
+          "rmse": 4.92,
+          "mae": 3.9264,
+          "r2": 0.2243,
+          "mape": 4.0331
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 2.7303,
+        "mae": 2.0826,
+        "r2": 0.7611,
+        "mape": 2.2378
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:12.304382+00:00"
+    },
+    "NVDA": {
+      "ticker": "NVDA",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\NVDA_best_model.pkl",
+      "current_price": 225.83,
+      "predicted_next_close": 215.2091,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 13.2165,
+          "mae": 9.3397,
+          "r2": 0.4237,
+          "mape": 4.547
+        },
+        "RandomForest": {
+          "rmse": 11.1381,
+          "mae": 7.7984,
+          "r2": 0.5907,
+          "mape": 3.7876
+        },
+        "GradientBoosting": {
+          "rmse": 12.8142,
+          "mae": 9.2727,
+          "r2": 0.4582,
+          "mape": 4.5136
+        },
+        "Ridge": {
+          "rmse": 6.6152,
+          "mae": 4.8584,
+          "r2": 0.8556,
+          "mape": 2.4031
+        },
+        "SVR": {
+          "rmse": 17.2569,
+          "mae": 12.9641,
+          "r2": 0.0174,
+          "mape": 6.3067
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 6.6152,
+        "mae": 4.8584,
+        "r2": 0.8556,
+        "mape": 2.4031
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:14.960768+00:00"
+    },
+    "PYPL": {
+      "ticker": "PYPL",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\PYPL_best_model.pkl",
+      "current_price": 45.23,
+      "predicted_next_close": 43.6591,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 2.3913,
+          "mae": 1.9448,
+          "r2": 0.1136,
+          "mape": 4.0172
+        },
+        "RandomForest": {
+          "rmse": 2.3455,
+          "mae": 1.8953,
+          "r2": 0.1472,
+          "mape": 3.9231
+        },
+        "GradientBoosting": {
+          "rmse": 2.3823,
+          "mae": 1.9866,
+          "r2": 0.1203,
+          "mape": 4.1153
+        },
+        "Ridge": {
+          "rmse": 1.7621,
+          "mae": 1.5257,
+          "r2": 0.5187,
+          "mape": 3.2135
+        },
+        "SVR": {
+          "rmse": 2.3387,
+          "mae": 1.8538,
+          "r2": 0.1521,
+          "mape": 4.0196
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 1.7621,
+        "mae": 1.5257,
+        "r2": 0.5187,
+        "mape": 3.2135
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:18.217761+00:00"
+    },
+    "QQQ": {
+      "ticker": "QQQ",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\QQQ_best_model.pkl",
+      "current_price": 714.71,
+      "predicted_next_close": 701.3387,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 47.7391,
+          "mae": 36.567,
+          "r2": -0.0198,
+          "mape": 5.4767
+        },
+        "RandomForest": {
+          "rmse": 42.6519,
+          "mae": 32.2053,
+          "r2": 0.186,
+          "mape": 4.8223
+        },
+        "GradientBoosting": {
+          "rmse": 44.5517,
+          "mae": 34.0308,
+          "r2": 0.1118,
+          "mape": 5.1025
+        },
+        "Ridge": {
+          "rmse": 13.0323,
+          "mae": 11.3056,
+          "r2": 0.924,
+          "mape": 1.7594
+        },
+        "SVR": {
+          "rmse": 60.6579,
+          "mae": 49.8043,
+          "r2": -0.6464,
+          "mape": 7.5277
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 13.0323,
+        "mae": 11.3056,
+        "r2": 0.924,
+        "mape": 1.7594
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:20.240537+00:00"
+    },
+    "SHOP": {
+      "ticker": "SHOP",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\SHOP_best_model.pkl",
+      "current_price": 95.4,
+      "predicted_next_close": 96.5251,
+      "predicted_direction": "up",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 13.2931,
+          "mae": 11.238,
+          "r2": -1.0836,
+          "mape": 9.9756
+        },
+        "RandomForest": {
+          "rmse": 10.9573,
+          "mae": 8.9897,
+          "r2": -0.4157,
+          "mape": 8.0134
+        },
+        "GradientBoosting": {
+          "rmse": 13.8169,
+          "mae": 11.3756,
+          "r2": -1.2511,
+          "mape": 10.0256
+        },
+        "Ridge": {
+          "rmse": 5.6535,
+          "mae": 4.2926,
+          "r2": 0.6231,
+          "mape": 3.7248
+        },
+        "SVR": {
+          "rmse": 16.6434,
+          "mae": 13.7038,
+          "r2": -2.2663,
+          "mape": 12.3095
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 5.6535,
+        "mae": 4.2926,
+        "r2": 0.6231,
+        "mape": 3.7248
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:22.056127+00:00"
+    },
+    "SNAP": {
+      "ticker": "SNAP",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\SNAP_best_model.pkl",
+      "current_price": 5.61,
+      "predicted_next_close": 5.628,
+      "predicted_direction": "up",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 0.4926,
+          "mae": 0.4171,
+          "r2": 0.5203,
+          "mape": 7.7169
+        },
+        "RandomForest": {
+          "rmse": 0.4224,
+          "mae": 0.3586,
+          "r2": 0.6472,
+          "mape": 6.7641
+        },
+        "GradientBoosting": {
+          "rmse": 0.4277,
+          "mae": 0.3622,
+          "r2": 0.6383,
+          "mape": 6.8118
+        },
+        "Ridge": {
+          "rmse": 0.3066,
+          "mae": 0.2611,
+          "r2": 0.8142,
+          "mape": 4.9917
+        },
+        "SVR": {
+          "rmse": 1.3405,
+          "mae": 1.2554,
+          "r2": -2.5522,
+          "mape": 24.0267
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 0.3066,
+        "mae": 0.2611,
+        "r2": 0.8142,
+        "mape": 4.9917
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:24.087018+00:00"
+    },
+    "SPOT": {
+      "ticker": "SPOT",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\SPOT_best_model.pkl",
+      "current_price": 430.9,
+      "predicted_next_close": 437.825,
+      "predicted_direction": "up",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 34.6141,
+          "mae": 24.0461,
+          "r2": 0.0737,
+          "mape": 5.4033
+        },
+        "RandomForest": {
+          "rmse": 28.3017,
+          "mae": 20.5656,
+          "r2": 0.3807,
+          "mape": 4.5732
+        },
+        "GradientBoosting": {
+          "rmse": 30.8406,
+          "mae": 22.5109,
+          "r2": 0.2646,
+          "mape": 5.0061
+        },
+        "Ridge": {
+          "rmse": 17.3862,
+          "mae": 13.0894,
+          "r2": 0.7663,
+          "mape": 2.7574
+        },
+        "SVR": {
+          "rmse": 52.566,
+          "mae": 41.2284,
+          "r2": -1.1363,
+          "mape": 9.1833
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 17.3862,
+        "mae": 13.0894,
+        "r2": 0.7663,
+        "mape": 2.7574
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:26.011351+00:00"
+    },
+    "SPY": {
+      "ticker": "SPY",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\SPY_best_model.pkl",
+      "current_price": 742.31,
+      "predicted_next_close": 731.8321,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 32.3555,
+          "mae": 26.1797,
+          "r2": 0.077,
+          "mape": 3.6819
+        },
+        "RandomForest": {
+          "rmse": 28.4637,
+          "mae": 22.2842,
+          "r2": 0.2857,
+          "mape": 3.1227
+        },
+        "GradientBoosting": {
+          "rmse": 31.3121,
+          "mae": 24.7441,
+          "r2": 0.1356,
+          "mape": 3.4654
+        },
+        "Ridge": {
+          "rmse": 10.2905,
+          "mae": 9.0366,
+          "r2": 0.9066,
+          "mape": 1.3046
+        },
+        "SVR": {
+          "rmse": 46.4062,
+          "mae": 39.1502,
+          "r2": -0.8987,
+          "mape": 5.5088
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 10.2905,
+        "mae": 9.0366,
+        "r2": 0.9066,
+        "mape": 1.3046
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:27.732232+00:00"
+    },
+    "TSLA": {
+      "ticker": "TSLA",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\TSLA_best_model.pkl",
+      "current_price": 445.27,
+      "predicted_next_close": 440.4697,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 30.2702,
+          "mae": 24.4964,
+          "r2": -0.3405,
+          "mape": 6.6791
+        },
+        "RandomForest": {
+          "rmse": 24.3465,
+          "mae": 20.9306,
+          "r2": 0.1328,
+          "mape": 5.6421
+        },
+        "GradientBoosting": {
+          "rmse": 24.8647,
+          "mae": 21.4377,
+          "r2": 0.0955,
+          "mape": 5.7883
+        },
+        "Ridge": {
+          "rmse": 12.5681,
+          "mae": 9.8667,
+          "r2": 0.7689,
+          "mape": 2.5665
+        },
+        "SVR": {
+          "rmse": 14.4722,
+          "mae": 11.8218,
+          "r2": 0.6936,
+          "mape": 3.1448
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 12.5681,
+        "mae": 9.8667,
+        "r2": 0.7689,
+        "mape": 2.5665
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:30.858433+00:00"
+    },
+    "UBER": {
+      "ticker": "UBER",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\UBER_best_model.pkl",
+      "current_price": 74.7,
+      "predicted_next_close": 74.6323,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 2.8848,
+          "mae": 2.3994,
+          "r2": -0.5552,
+          "mape": 3.2966
+        },
+        "RandomForest": {
+          "rmse": 2.2754,
+          "mae": 1.8297,
+          "r2": 0.0325,
+          "mape": 2.5105
+        },
+        "GradientBoosting": {
+          "rmse": 2.5061,
+          "mae": 2.0581,
+          "r2": -0.1737,
+          "mape": 2.8216
+        },
+        "Ridge": {
+          "rmse": 1.8867,
+          "mae": 1.4674,
+          "r2": 0.3347,
+          "mape": 1.9652
+        },
+        "SVR": {
+          "rmse": 4.5765,
+          "mae": 3.663,
+          "r2": -2.9141,
+          "mape": 5.0271
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 1.8867,
+        "mae": 1.4674,
+        "r2": 0.3347,
+        "mape": 1.9652
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:32.752088+00:00"
+    },
+    "UNH": {
+      "ticker": "UNH",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\UNH_best_model.pkl",
+      "current_price": 401.16,
+      "predicted_next_close": 390.8522,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 22.5677,
+          "mae": 16.8879,
+          "r2": 0.7395,
+          "mape": 4.802
+        },
+        "RandomForest": {
+          "rmse": 16.9167,
+          "mae": 12.4301,
+          "r2": 0.8536,
+          "mape": 3.5532
+        },
+        "GradientBoosting": {
+          "rmse": 19.589,
+          "mae": 14.6911,
+          "r2": 0.8037,
+          "mape": 4.1842
+        },
+        "Ridge": {
+          "rmse": 9.5768,
+          "mae": 7.405,
+          "r2": 0.9531,
+          "mape": 2.2041
+        },
+        "SVR": {
+          "rmse": 34.9102,
+          "mae": 25.1363,
+          "r2": 0.3767,
+          "mape": 7.0173
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 9.5768,
+        "mae": 7.405,
+        "r2": 0.9531,
+        "mape": 2.2041
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:34.618400+00:00"
+    },
+    "V": {
+      "ticker": "V",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\V_best_model.pkl",
+      "current_price": 320.31,
+      "predicted_next_close": 319.0124,
+      "predicted_direction": "down",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 9.3884,
+          "mae": 7.9919,
+          "r2": 0.0889,
+          "mape": 2.5956
+        },
+        "RandomForest": {
+          "rmse": 8.1428,
+          "mae": 6.4658,
+          "r2": 0.3146,
+          "mape": 2.0762
+        },
+        "GradientBoosting": {
+          "rmse": 8.5793,
+          "mae": 6.9629,
+          "r2": 0.2392,
+          "mape": 2.2356
+        },
+        "Ridge": {
+          "rmse": 5.4715,
+          "mae": 3.5551,
+          "r2": 0.6905,
+          "mape": 1.1323
+        },
+        "SVR": {
+          "rmse": 12.7822,
+          "mae": 11.8361,
+          "r2": -0.6889,
+          "mape": 3.8418
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 5.4715,
+        "mae": 3.5551,
+        "r2": 0.6905,
+        "mape": 1.1323
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:37.069022+00:00"
+    },
+    "WMT": {
+      "ticker": "WMT",
+      "best_model": "Ridge",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\WMT_best_model.pkl",
+      "current_price": 131.47,
+      "predicted_next_close": 131.8587,
+      "predicted_direction": "up",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 3.9736,
+          "mae": 3.3188,
+          "r2": -0.1948,
+          "mape": 2.5972
+        },
+        "RandomForest": {
+          "rmse": 3.7928,
+          "mae": 3.2327,
+          "r2": -0.0886,
+          "mape": 2.5322
+        },
+        "GradientBoosting": {
+          "rmse": 4.2123,
+          "mae": 3.5741,
+          "r2": -0.3427,
+          "mape": 2.7983
+        },
+        "Ridge": {
+          "rmse": 2.0276,
+          "mae": 1.5807,
+          "r2": 0.6889,
+          "mape": 1.2604
+        },
+        "SVR": {
+          "rmse": 5.6095,
+          "mae": 4.7683,
+          "r2": -1.3812,
+          "mape": 3.713
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 2.0276,
+        "mae": 1.5807,
+        "r2": 0.6889,
+        "mape": 1.2604
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:39.002766+00:00"
+    },
+    "XOM": {
+      "ticker": "XOM",
+      "best_model": "XGBoost",
+      "model_path": "C:\\Users\\vibho\\OneDrive\\Desktop\\MP_SEM2\\models\\XOM_best_model.pkl",
+      "current_price": 151.57,
+      "predicted_next_close": 155.489,
+      "predicted_direction": "up",
+      "all_model_metrics": {
+        "XGBoost": {
+          "rmse": 6.1407,
+          "mae": 5.0217,
+          "r2": 0.2358,
+          "mape": 3.2059
+        },
+        "RandomForest": {
+          "rmse": 6.4315,
+          "mae": 4.6119,
+          "r2": 0.1617,
+          "mape": 2.8669
+        },
+        "GradientBoosting": {
+          "rmse": 7.1044,
+          "mae": 5.0302,
+          "r2": -0.0228,
+          "mape": 3.1229
+        },
+        "Ridge": {
+          "rmse": 7.9674,
+          "mae": 7.0676,
+          "r2": -0.2864,
+          "mape": 4.6418
+        },
+        "SVR": {
+          "rmse": 14.5586,
+          "mae": 12.9748,
+          "r2": -3.2953,
+          "mape": 8.2413
+        }
+      },
+      "best_model_metrics": {
+        "rmse": 6.1407,
+        "mae": 5.0217,
+        "r2": 0.2358,
+        "mape": 3.2059
+      },
+      "train_rows": 160,
+      "test_rows": 41,
+      "feature_columns": [
+        "ema_20",
+        "sma_50",
+        "rsi",
+        "macd",
+        "macd_signal",
+        "macd_hist",
+        "bb_upper",
+        "bb_lower",
+        "bb_width",
+        "bb_position",
+        "close_to_ema20",
+        "close_to_sma50",
+        "high_low_range",
+        "return_1d",
+        "return_5d",
+        "return_10d",
+        "volume_ratio",
+        "lag_1",
+        "lag_2",
+        "lag_5",
+        "Open",
+        "High",
+        "Low",
+        "Close",
+        "Volume"
+      ],
+      "trained_at": "2026-05-14T20:15:40.755976+00:00"
+    }
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "generated_at": "2026-05-14T19:29:00.718482+00:00",
+  "model_used": "llama3",
+  "tickers": [
+    "AAPL",
+    "AMC",
+    "AMD",
+    "AMZN",
+    "BB",
+    "BRK",
+    "COIN",
+    "DIS",
+    "GME",
+    "GOOGL",
+    "HOOD",
+    "INTC",
+    "JNJ",
+    "JPM",
+    "MA",
+    "META",
+    "MSFT",
+    "NFLX",
+    "NVDA",
+    "PYPL",
+    "QQQ",
+    "SHOP",
+    "SNAP",
+    "SPOT",
+    "SPY",
+    "SQ",
+    "TSLA",
+    "UBER",
+    "UNH",
+    "V",
+    "WMT",
+    "XOM"
+  ],
+  "summaries": {
+    "DIS": {
+      "ticker": "DIS",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "JPM": {
+      "ticker": "JPM",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "TSLA": {
+      "ticker": "TSLA",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "HOOD": {
+      "ticker": "HOOD",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "MA": {
+      "ticker": "MA",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "SPY": {
+      "ticker": "SPY",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "V": {
+      "ticker": "V",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "UNH": {
+      "ticker": "UNH",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "AMZN": {
+      "ticker": "AMZN",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "GOOGL": {
+      "ticker": "GOOGL",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "META": {
+      "ticker": "META",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "NVDA": {
+      "ticker": "NVDA",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "XOM": {
+      "ticker": "XOM",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "COIN": {
+      "ticker": "COIN",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "NFLX": {
+      "ticker": "NFLX",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "MSFT": {
+      "ticker": "MSFT",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "QQQ": {
+      "ticker": "QQQ",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "AMD": {
+      "ticker": "AMD",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "INTC": {
+      "ticker": "INTC",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "AAPL": {
+      "ticker": "AAPL",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "JNJ": {
+      "ticker": "JNJ",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "PYPL": {
+      "ticker": "PYPL",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "BB": {
+      "ticker": "BB",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "GME": {
+      "ticker": "GME",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "SPOT": {
+      "ticker": "SPOT",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "SNAP": {
+      "ticker": "SNAP",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "BRK": {
+      "ticker": "BRK",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "UBER": {
+      "ticker": "UBER",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "SQ": {
+      "ticker": "SQ",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "SHOP": {
+      "ticker": "SHOP",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "WMT": {
+      "ticker": "WMT",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    },
+    "AMC": {
+      "ticker": "AMC",
+      "overall_verdict": "unknown",
+      "confidence": "low",
+      "summary": "Agent stopped due to iteration limit or time limit.",
+      "parse_error": true
+    }
+  }
+}

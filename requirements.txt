@@ -1,0 +1,42 @@
+# =============================================================================
+# requirements.txt — Stock Intelligence & Social Sentiment Dashboard
+# Install with: pip install -r requirements.txt
+# =============================================================================
+
+# --- Reddit Scraping ---
+praw==7.7.1
+
+# --- Sentiment Analysis ---
+vaderSentiment==3.3.2
+
+# --- NLP / NER for entity detection ---
+spacy==3.7.4
+# After install, also run: python -m spacy download en_core_web_sm
+
+# --- Financial Data ---
+yfinance==0.2.40
+
+# --- ML Models ---
+xgboost==2.0.3
+scikit-learn==1.4.2
+numpy==1.26.4
+pandas==2.2.2
+
+# --- Technical Indicators ---
+ta==0.11.0                  # Wraps pandas-ta style indicators cleanly
+
+# --- Model Persistence ---
+joblib==1.4.2
+
+# --- Agentic AI ---
+crewai==0.30.11
+langchain-community==0.2.1  # Required by CrewAI for Ollama integration
+ollama==0.2.0               # Python client for local Ollama server
+
+# --- Dashboard ---
+streamlit==1.35.0
+plotly==5.22.0              # Candlestick charts
+
+# --- Utilities ---
+python-dotenv==1.0.1        # Optional: load .env for Reddit credentials
+tqdm==4.66.4                # Progress bars during scraping/training

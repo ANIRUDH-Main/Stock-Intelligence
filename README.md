@@ -1,4 +1,4 @@
-# Stock Intelligence & Sentiment Analysis Dashboard
+# 📈 Stock Intelligence & Social Sentiment Dashboard
 
 An AI-powered financial intelligence pipeline that scrapes Reddit, detects stock tickers, scores sentiment, predicts next-day prices using ML, and generates analyst narratives via a local LLM — all displayed in an interactive Streamlit dashboard. **Zero ongoing API cost.**
 
@@ -6,19 +6,13 @@ An AI-powered financial intelligence pipeline that scrapes Reddit, detects stock
 
 ## What It Does
 
-| Stage | What Happens |
-|-------|-------------|
-| 1. Reddit Scraping | Collects posts & comments from 20 financial subreddits using PRAW |
-| 2. Sentiment Analysis | Detects tickers via spaCy NER + regex, scores every post with VADER |
-| 3. ML Prediction | Trains 5 regression models on 25 technical features per ticker |
-| 4. AI Narratives | CrewAI + Ollama (llama3) generates structured analyst summaries locally |
-| 5. Dashboard | Interactive Streamlit app with charts, sentiment gauges, and ML panels |
-
----
-
-## Demo
-
-> Streamlit dashboard showing candlestick chart, VADER sentiment gauge, ML prediction panel, and CrewAI analyst narrative for a selected ticker.
+| Stage | Script | What Happens |
+|-------|--------|-------------|
+| 1. Reddit Scraping | `1_scraper.py` | Collects posts & comments from 20 financial subreddits using PRAW |
+| 2. Sentiment Analysis | `2_sentiment.py` | Detects tickers via spaCy NER + regex, scores every post with VADER |
+| 3. ML Prediction | `3_ml_predictor.py` | Trains 5 regression models on 25 technical features per ticker |
+| 4. AI Narratives | `4_crewai_summary.py` | CrewAI + Ollama (llama3) generates structured analyst summaries locally |
+| 5. Dashboard | `app.py` | Interactive Streamlit app with charts, sentiment gauges, and ML panels |
 
 ---
 
@@ -30,41 +24,6 @@ An AI-powered financial intelligence pipeline that scrapes Reddit, detects stock
 - **Agentic AI** — CrewAI, Ollama (llama3)
 - **Dashboard** — Streamlit, Plotly
 - **Core** — Python, Pandas, NumPy
-
----
-
-## Project Structure
-
-```
-stock-sentiment-dashboard/
-│
-├── config.py                  # Reddit credentials, subreddit list, settings
-├── requirements.txt
-│
-├── scripts/
-│   ├── 1_scraper.py           # Stage 1: Reddit scraping
-│   ├── 2_sentiment.py         # Stage 2: Ticker detection + VADER scoring
-│   ├── 3_ml_predictor.py      # Stage 3: Feature engineering + model training
-│   └── 4_crewai_summary.py    # Stage 4: CrewAI agent narratives
-│
-├── dashboard/
-│   └── app.py                 # Stage 5: Streamlit dashboard
-│
-├── data/
-│   ├── raw_data.json          # Output of Stage 1
-│   ├── filtered_data.json     # Output of Stage 2
-│   └── summaries.json         # Output of Stage 4
-│
-└── models/
-    ├── model_metadata.json    # All ML metrics and predictions
-    └── {TICKER}_best_model.pkl
-```
-
----
-
-## Subreddits Scraped
-
-`r/wallstreetbets` `r/stocks` `r/investing` `r/StockMarket` `r/options` `r/pennystocks` `r/SecurityAnalysis` `r/ValueInvesting` `r/Daytrading` `r/algotrading` `r/GME` `r/Superstonk` `r/NVDA_Stock` `r/teslainvestorsclub` `r/apple` `r/technology` `r/dividends` `r/RobinHood` `r/finance` `r/economy`
 
 ---
 
@@ -92,78 +51,6 @@ stock-sentiment-dashboard/
 
 ---
 
-## Setup & Installation
-
-### Prerequisites
-- Python 3.9+
-- [Ollama](https://ollama.ai) installed locally with llama3 pulled
-- Reddit API credentials (free — takes 2 minutes at [reddit.com/prefs/apps](https://www.reddit.com/prefs/apps))
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/your-username/stock-sentiment-dashboard.git
-cd stock-sentiment-dashboard
-```
-
-### 2. Install dependencies
-```bash
-pip install -r requirements.txt
-python -m spacy download en_core_web_sm
-```
-
-### 3. Add Reddit credentials
-Open `config.py` and fill in:
-```python
-REDDIT_CLIENT_ID = "your_client_id"
-REDDIT_CLIENT_SECRET = "your_client_secret"
-REDDIT_USER_AGENT = "StockSentimentBot/1.0"
-```
-
-### 4. Pull the LLM (for Stage 4)
-```bash
-ollama pull llama3
-```
-
----
-
-## Running the Pipeline
-
-Run each stage in order:
-
-```bash
-# Stage 1 — Scrape Reddit (2-5 min)
-python scripts/1_scraper.py
-
-# Stage 2 — Detect tickers + score sentiment (~30 sec)
-python scripts/2_sentiment.py
-
-# Stage 3 — Train ML models for every ticker found (5-15 min)
-python scripts/3_ml_predictor.py
-
-# Stage 4 — Generate CrewAI analyst narratives (2-10 min)
-# Make sure Ollama is running before this step
-python scripts/4_crewai_summary.py
-
-# Stage 5 — Launch the dashboard
-streamlit run dashboard/app.py
-```
-
-Then open `http://localhost:8501` in your browser.
-
-> **Note:** Stages 1-4 only need to be re-run when you want fresh data. The dashboard reads from pre-generated JSON files and can be launched independently.
-
----
-
-## Dashboard Features
-
-- **Candlestick Chart** — Interactive Plotly price chart with EMA, SMA, and Bollinger Band overlays
-- **Sentiment Panel** — VADER gauge showing bullish/bearish/neutral score per ticker, aggregated across all Reddit posts
-- **ML Prediction Panel** — Next-day closing price prediction from the best-performing model, with RMSE and R² metrics
-- **CrewAI Narrative** — Structured analyst summary: overall verdict, confidence, bull case, bear case, key catalysts, key risks
-- **Reddit Post Explorer** — Browse raw posts filtered by sentiment label with expandable detail view
-
----
-
 ## Cost
 
 | Resource | Cost |
@@ -173,6 +60,138 @@ Then open `http://localhost:8501` in your browser.
 | Ollama + llama3 | Free (runs locally) |
 | All ML libraries | Free (open-source) |
 | **Total ongoing cost** | **$0** |
+
+---
+
+## Project Structure
+
+```
+stock_dashboard/
+├── config.py                    # ← All settings live here
+├── requirements.txt
+├── data/
+│   ├── raw_data.json            # Generated by Step 1
+│   ├── filtered_data.json       # Generated by Step 2
+│   └── summaries.json           # Generated by Step 4
+├── models/
+│   ├── {TICKER}_best_model.pkl  # Generated by Step 3
+│   └── model_metadata.json      # Generated by Step 3
+├── scripts/
+│   ├── 1_scraper.py
+│   ├── 2_sentiment.py
+│   ├── 3_ml_predictor.py
+│   └── 4_crewai_summary.py
+└── dashboard/
+    └── app.py
+```
+
+---
+
+## Setup
+
+### 1. Install dependencies
+```bash
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+```
+
+### 2. Install and start Ollama
+```bash
+# Install from https://ollama.com
+ollama pull llama3
+ollama serve           # Keep this running in a separate terminal
+```
+
+### 3. Configure Reddit API credentials
+1. Go to https://www.reddit.com/prefs/apps
+2. Create a "script" type app
+3. Open `config.py` and fill in:
+```python
+REDDIT_CLIENT_ID     = "your_client_id"
+REDDIT_CLIENT_SECRET = "your_client_secret"
+REDDIT_USER_AGENT    = "StockDashboard/1.0 by YourUsername"
+```
+
+---
+
+## Running the Pipeline
+
+Run scripts **in order** from the project root directory:
+
+```bash
+# Step 1: Scrape Reddit (takes ~2-5 minutes depending on rate limits)
+python scripts/1_scraper.py
+
+# Step 2: Detect tickers + score sentiment (~30 sec)
+python scripts/2_sentiment.py
+
+# Step 3: Train ML models (takes ~5-15 minutes depending on ticker count)
+python scripts/3_ml_predictor.py
+
+# Step 4: Generate CrewAI summaries (requires Ollama running)
+python scripts/4_crewai_summary.py
+
+# Step 5: Launch dashboard
+streamlit run dashboard/app.py
+```
+
+> **Note:** Steps 1–4 only need to re-run when you want fresh data. The dashboard reads from pre-generated JSON files and can be launched independently.
+
+---
+
+## Configuration Reference (`config.py`)
+
+| Setting | Default | Description |
+|---|---|---|
+| `SCRAPE_DAYS_BACK` | `3` | Days of Reddit history to scrape |
+| `POSTS_PER_SUBREDDIT` | `50` | Posts per subreddit (hot + new each) |
+| `COMMENTS_PER_POST` | `20` | Top comments per post |
+| `YFINANCE_PERIOD` | `"1y"` | History for ML training |
+| `TEST_SPLIT_RATIO` | `0.2` | 20% hold-out for evaluation |
+| `OLLAMA_MODEL` | `"llama3"` | Local Ollama model name |
+| `MAX_POSTS_PER_TICKER_FOR_SUMMARY` | `15` | Token budget control for CrewAI |
+| `CHART_LOOKBACK_DAYS` | `30` | Days shown on price chart |
+
+---
+
+## Subreddits Monitored (edit in `config.py`)
+
+`wallstreetbets` `stocks` `investing` `StockMarket` `options` `pennystocks` `SecurityAnalysis` `ValueInvesting` `Daytrading` `algotrading` `finance` `economy` `RobinHood` `Superstonk` `GME` `NVDA_Stock` `teslainvestorsclub` `apple` `technology` `dividends`
+
+---
+
+## Architecture Decisions
+
+### Why VADER instead of LLM for sentiment?
+VADER runs locally with zero API cost and processes thousands of posts in seconds. LLMs are only used for the qualitative summary step (CrewAI), which processes ~15 posts per ticker — a small, focused context.
+
+### Why chronological train/test split for ML?
+Financial time-series data must never be randomly shuffled for splitting. A random split would let the model see "future" data during training, causing severe overfitting and misleadingly high metrics.
+
+### Why 5 regression models?
+XGBoost and Gradient Boosting handle non-linear patterns well. Ridge provides a linear baseline. SVR is robust to outliers common in financial data. Random Forest gives variance around the ensemble mean. The best model is picked per-ticker — different stocks may suit different models.
+
+### Why a single CrewAI agent?
+A single agent with a focused role and a small context (≤15 posts) is faster, cheaper in tokens, and less likely to hallucinate than a multi-agent chain. The summarisation task doesn't require tool use or delegation.
+
+---
+
+## Troubleshooting
+
+**`praw.exceptions.ResponseException: 401`**
+→ Check your `REDDIT_CLIENT_ID` and `REDDIT_CLIENT_SECRET` in `config.py`.
+
+**`spacy.errors.E050: Can't find model 'en_core_web_sm'`**
+→ Run: `python -m spacy download en_core_web_sm`
+
+**`Connection refused` for Ollama**
+→ Run `ollama serve` in a separate terminal before running Step 4.
+
+**`No tickers found in filtered_data.json`**
+→ The scraper may have found no posts in the time window. Try increasing `SCRAPE_DAYS_BACK` or `POSTS_PER_SUBREDDIT` in `config.py`.
+
+**ML model accuracy is low (R² near 0)**
+→ This is normal for raw next-day price prediction — financial markets are noisy. The model is most useful for directional guidance, not exact price targets.
 
 ---
 

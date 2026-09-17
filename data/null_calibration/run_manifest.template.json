@@ -1,0 +1,27 @@
+{
+  "purpose": "Null-calibration reproducibility archive",
+  "repository_path": "data/null_calibration/",
+  "script_path": "experiments/null_calibration.py",
+  "paper_sections": [
+    "Section V",
+    "Appendix A"
+  ],
+  "parameters": {
+    "n_paths": 200,
+    "observations_per_path": 251,
+    "usable_rows_per_path": 201,
+    "train_rows": 160,
+    "test_rows": 41,
+    "simulation_seed": 7,
+    "permutation_seed": 0,
+    "volatility": [
+      0.2,
+      0.35,
+      0.5,
+      0.8
+    ],
+    "drift": "N(0.08, 0.25^2)",
+    "initial_price_source": "models/model_metadata.json"
+  },
+  "status": "Run experiments/null_calibration.py to generate CSV outputs."
+}

@@ -1,0 +1,1507 @@
+{
+  "experiment": "Null calibration of Stock Intelligence forecasting protocol",
+  "n_paths": 200,
+  "observations_per_path": 251,
+  "usable_rows_per_path": 201,
+  "train_rows": 160,
+  "test_rows": 41,
+  "simulation_seed": 7,
+  "permutation_seed": 0,
+  "volatility_values": [
+    0.2,
+    0.35,
+    0.5,
+    0.8
+  ],
+  "drift_distribution": "Normal(mean=0.08, sd=0.25)",
+  "initial_price_source": "models/model_metadata.json",
+  "initial_price_tickers": [
+    "AAPL",
+    "AMC",
+    "AMD",
+    "AMZN",
+    "ARKK",
+    "BB",
+    "BBBY",
+    "COIN",
+    "DIS",
+    "GME",
+    "GOOGL",
+    "HOOD",
+    "INTC",
+    "JNJ",
+    "JPM",
+    "LYFT",
+    "MA",
+    "META",
+    "MSFT",
+    "NFLX",
+    "NVDA",
+    "PYPL",
+    "QQQ",
+    "SHOP",
+    "SNAP",
+    "SPOT",
+    "SPY",
+    "TSLA",
+    "UBER",
+    "UNH",
+    "V",
+    "WMT",
+    "XOM"
+  ],
+  "path_parameters": [
+    {
+      "path_id": 1,
+      "ticker_source": "WMT",
+      "initial_price": 131.47,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.15468638437711746
+    },
+    {
+      "path_id": 2,
+      "ticker_source": "WMT",
+      "initial_price": 131.47,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.3197847309745313
+    },
+    {
+      "path_id": 3,
+      "ticker_source": "COIN",
+      "initial_price": 201.8,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.0622065763415723
+    },
+    {
+      "path_id": 4,
+      "ticker_source": "SNAP",
+      "initial_price": 5.61,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.31354349817928107
+    },
+    {
+      "path_id": 5,
+      "ticker_source": "UNH",
+      "initial_price": 401.16,
+      "annualized_volatility": 0.5,
+      "annualized_drift": -0.31085655197355166
+    },
+    {
+      "path_id": 6,
+      "ticker_source": "UBER",
+      "initial_price": 74.7,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.014650978316790436
+    },
+    {
+      "path_id": 7,
+      "ticker_source": "UNH",
+      "initial_price": 401.16,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.27617038510086067
+    },
+    {
+      "path_id": 8,
+      "ticker_source": "AAPL",
+      "initial_price": 298.87,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.0452312169035186
+    },
+    {
+      "path_id": 9,
+      "ticker_source": "AMD",
+      "initial_price": 445.5,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.07580050844168437
+    },
+    {
+      "path_id": 10,
+      "ticker_source": "TSLA",
+      "initial_price": 445.27,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.07283213824877438
+    },
+    {
+      "path_id": 11,
+      "ticker_source": "BBBY",
+      "initial_price": 4.73,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.06438611002723245
+    },
+    {
+      "path_id": 12,
+      "ticker_source": "V",
+      "initial_price": 320.31,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.4552007741205117
+    },
+    {
+      "path_id": 13,
+      "ticker_source": "HOOD",
+      "initial_price": 76.75,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.24522616887362841
+    },
+    {
+      "path_id": 14,
+      "ticker_source": "WMT",
+      "initial_price": 131.47,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.2607830396912841
+    },
+    {
+      "path_id": 15,
+      "ticker_source": "AAPL",
+      "initial_price": 298.87,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.029932323187759992
+    },
+    {
+      "path_id": 16,
+      "ticker_source": "PYPL",
+      "initial_price": 45.23,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.10831239981825147
+    },
+    {
+      "path_id": 17,
+      "ticker_source": "GME",
+      "initial_price": 22.08,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.10131349836325923
+    },
+    {
+      "path_id": 18,
+      "ticker_source": "AAPL",
+      "initial_price": 298.87,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.39121368941760853
+    },
+    {
+      "path_id": 19,
+      "ticker_source": "UBER",
+      "initial_price": 74.7,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.31948880735786456
+    },
+    {
+      "path_id": 20,
+      "ticker_source": "SNAP",
+      "initial_price": 5.61,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.15359025420658812
+    },
+    {
+      "path_id": 21,
+      "ticker_source": "ARKK",
+      "initial_price": 78.05,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.26777727845607674
+    },
+    {
+      "path_id": 22,
+      "ticker_source": "SPOT",
+      "initial_price": 430.9,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.3104224737365732
+    },
+    {
+      "path_id": 23,
+      "ticker_source": "SPOT",
+      "initial_price": 430.9,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.1285826041062878
+    },
+    {
+      "path_id": 24,
+      "ticker_source": "UNH",
+      "initial_price": 401.16,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.5065276338127233
+    },
+    {
+      "path_id": 25,
+      "ticker_source": "NVDA",
+      "initial_price": 225.83,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.03903760639016098
+    },
+    {
+      "path_id": 26,
+      "ticker_source": "ARKK",
+      "initial_price": 78.05,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.08177706330472079
+    },
+    {
+      "path_id": 27,
+      "ticker_source": "SHOP",
+      "initial_price": 95.4,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.22131492894394889
+    },
+    {
+      "path_id": 28,
+      "ticker_source": "AMZN",
+      "initial_price": 270.13,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.3770625027730063
+    },
+    {
+      "path_id": 29,
+      "ticker_source": "GOOGL",
+      "initial_price": 402.62,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.2210884732415077
+    },
+    {
+      "path_id": 30,
+      "ticker_source": "HOOD",
+      "initial_price": 76.75,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.14583767916670676
+    },
+    {
+      "path_id": 31,
+      "ticker_source": "UNH",
+      "initial_price": 401.16,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.3961093733410128
+    },
+    {
+      "path_id": 32,
+      "ticker_source": "NVDA",
+      "initial_price": 225.83,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.38688320415672334
+    },
+    {
+      "path_id": 33,
+      "ticker_source": "SPY",
+      "initial_price": 742.31,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.22800790053415249
+    },
+    {
+      "path_id": 34,
+      "ticker_source": "AAPL",
+      "initial_price": 298.87,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.19743355505804971
+    },
+    {
+      "path_id": 35,
+      "ticker_source": "COIN",
+      "initial_price": 201.8,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.05243717040382319
+    },
+    {
+      "path_id": 36,
+      "ticker_source": "TSLA",
+      "initial_price": 445.27,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.2602408291279965
+    },
+    {
+      "path_id": 37,
+      "ticker_source": "SNAP",
+      "initial_price": 5.61,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.09138504439738275
+    },
+    {
+      "path_id": 38,
+      "ticker_source": "SHOP",
+      "initial_price": 95.4,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.08149214207457949
+    },
+    {
+      "path_id": 39,
+      "ticker_source": "JNJ",
+      "initial_price": 230.42,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.18901770444856092
+    },
+    {
+      "path_id": 40,
+      "ticker_source": "NVDA",
+      "initial_price": 225.83,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.16615141499348074
+    },
+    {
+      "path_id": 41,
+      "ticker_source": "SHOP",
+      "initial_price": 95.4,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.05686980789967945
+    },
+    {
+      "path_id": 42,
+      "ticker_source": "BBBY",
+      "initial_price": 4.73,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.055922977261931295
+    },
+    {
+      "path_id": 43,
+      "ticker_source": "HOOD",
+      "initial_price": 76.75,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.12957558709137498
+    },
+    {
+      "path_id": 44,
+      "ticker_source": "UBER",
+      "initial_price": 74.7,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.09681457715755278
+    },
+    {
+      "path_id": 45,
+      "ticker_source": "WMT",
+      "initial_price": 131.47,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.3441022227407853
+    },
+    {
+      "path_id": 46,
+      "ticker_source": "ARKK",
+      "initial_price": 78.05,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.04895482289464542
+    },
+    {
+      "path_id": 47,
+      "ticker_source": "INTC",
+      "initial_price": 120.29,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.3627093846106625
+    },
+    {
+      "path_id": 48,
+      "ticker_source": "BB",
+      "initial_price": 6.1,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.15810404282733787
+    },
+    {
+      "path_id": 49,
+      "ticker_source": "AMD",
+      "initial_price": 445.5,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.03414971566334647
+    },
+    {
+      "path_id": 50,
+      "ticker_source": "LYFT",
+      "initial_price": 13.68,
+      "annualized_volatility": 0.5,
+      "annualized_drift": -0.0051643744510015965
+    },
+    {
+      "path_id": 51,
+      "ticker_source": "UNH",
+      "initial_price": 401.16,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.016340290156896156
+    },
+    {
+      "path_id": 52,
+      "ticker_source": "ARKK",
+      "initial_price": 78.05,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.1922820355006164
+    },
+    {
+      "path_id": 53,
+      "ticker_source": "SPY",
+      "initial_price": 742.31,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.5243354885992914
+    },
+    {
+      "path_id": 54,
+      "ticker_source": "WMT",
+      "initial_price": 131.47,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.18453582152591158
+    },
+    {
+      "path_id": 55,
+      "ticker_source": "TSLA",
+      "initial_price": 445.27,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.09605611601093685
+    },
+    {
+      "path_id": 56,
+      "ticker_source": "V",
+      "initial_price": 320.31,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.00263449590070694
+    },
+    {
+      "path_id": 57,
+      "ticker_source": "INTC",
+      "initial_price": 120.29,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.17247987995467737
+    },
+    {
+      "path_id": 58,
+      "ticker_source": "SHOP",
+      "initial_price": 95.4,
+      "annualized_volatility": 0.5,
+      "annualized_drift": -0.26973501368939623
+    },
+    {
+      "path_id": 59,
+      "ticker_source": "ARKK",
+      "initial_price": 78.05,
+      "annualized_volatility": 0.5,
+      "annualized_drift": -0.02750514898823385
+    },
+    {
+      "path_id": 60,
+      "ticker_source": "LYFT",
+      "initial_price": 13.68,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.2172688716883111
+    },
+    {
+      "path_id": 61,
+      "ticker_source": "WMT",
+      "initial_price": 131.47,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.2847213048318533
+    },
+    {
+      "path_id": 62,
+      "ticker_source": "LYFT",
+      "initial_price": 13.68,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.3452019986920592
+    },
+    {
+      "path_id": 63,
+      "ticker_source": "SHOP",
+      "initial_price": 95.4,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.19916931562031098
+    },
+    {
+      "path_id": 64,
+      "ticker_source": "SPY",
+      "initial_price": 742.31,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.09769148182302721
+    },
+    {
+      "path_id": 65,
+      "ticker_source": "BB",
+      "initial_price": 6.1,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.4283638211868224
+    },
+    {
+      "path_id": 66,
+      "ticker_source": "TSLA",
+      "initial_price": 445.27,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.10425433543255169
+    },
+    {
+      "path_id": 67,
+      "ticker_source": "JNJ",
+      "initial_price": 230.42,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.20721247909059742
+    },
+    {
+      "path_id": 68,
+      "ticker_source": "UNH",
+      "initial_price": 401.16,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.01895877380389171
+    },
+    {
+      "path_id": 69,
+      "ticker_source": "AMZN",
+      "initial_price": 270.13,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.031117908010205475
+    },
+    {
+      "path_id": 70,
+      "ticker_source": "ARKK",
+      "initial_price": 78.05,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.17904884722947173
+    },
+    {
+      "path_id": 71,
+      "ticker_source": "AMZN",
+      "initial_price": 270.13,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.15289407738733607
+    },
+    {
+      "path_id": 72,
+      "ticker_source": "LYFT",
+      "initial_price": 13.68,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.1306587863904085
+    },
+    {
+      "path_id": 73,
+      "ticker_source": "AMZN",
+      "initial_price": 270.13,
+      "annualized_volatility": 0.5,
+      "annualized_drift": -0.051439543053760015
+    },
+    {
+      "path_id": 74,
+      "ticker_source": "MA",
+      "initial_price": 490.64,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.2598694552457252
+    },
+    {
+      "path_id": 75,
+      "ticker_source": "DIS",
+      "initial_price": 104.9,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.07875645489987011
+    },
+    {
+      "path_id": 76,
+      "ticker_source": "SHOP",
+      "initial_price": 95.4,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.28466279501516156
+    },
+    {
+      "path_id": 77,
+      "ticker_source": "XOM",
+      "initial_price": 151.57,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.13494738412226118
+    },
+    {
+      "path_id": 78,
+      "ticker_source": "UNH",
+      "initial_price": 401.16,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.049375117914208344
+    },
+    {
+      "path_id": 79,
+      "ticker_source": "MA",
+      "initial_price": 490.64,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.18664769710177403
+    },
+    {
+      "path_id": 80,
+      "ticker_source": "GME",
+      "initial_price": 22.08,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.11445732448685987
+    },
+    {
+      "path_id": 81,
+      "ticker_source": "BB",
+      "initial_price": 6.1,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.4000594154728206
+    },
+    {
+      "path_id": 82,
+      "ticker_source": "INTC",
+      "initial_price": 120.29,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.03263541046474542
+    },
+    {
+      "path_id": 83,
+      "ticker_source": "UBER",
+      "initial_price": 74.7,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.18906184656894165
+    },
+    {
+      "path_id": 84,
+      "ticker_source": "ARKK",
+      "initial_price": 78.05,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.07845453079094834
+    },
+    {
+      "path_id": 85,
+      "ticker_source": "INTC",
+      "initial_price": 120.29,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.6050509713524893
+    },
+    {
+      "path_id": 86,
+      "ticker_source": "TSLA",
+      "initial_price": 445.27,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.2705923837740428
+    },
+    {
+      "path_id": 87,
+      "ticker_source": "JPM",
+      "initial_price": 300.25,
+      "annualized_volatility": 0.5,
+      "annualized_drift": -0.1494006854179563
+    },
+    {
+      "path_id": 88,
+      "ticker_source": "HOOD",
+      "initial_price": 76.75,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.34593383751941204
+    },
+    {
+      "path_id": 89,
+      "ticker_source": "JNJ",
+      "initial_price": 230.42,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.2484225670552475
+    },
+    {
+      "path_id": 90,
+      "ticker_source": "PYPL",
+      "initial_price": 45.23,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.622319194481622
+    },
+    {
+      "path_id": 91,
+      "ticker_source": "NFLX",
+      "initial_price": 87.56,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.40380596610207514
+    },
+    {
+      "path_id": 92,
+      "ticker_source": "BBBY",
+      "initial_price": 4.73,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.15158799198781064
+    },
+    {
+      "path_id": 93,
+      "ticker_source": "DIS",
+      "initial_price": 104.9,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.3868405777800577
+    },
+    {
+      "path_id": 94,
+      "ticker_source": "AMD",
+      "initial_price": 445.5,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.14456643380343637
+    },
+    {
+      "path_id": 95,
+      "ticker_source": "BBBY",
+      "initial_price": 4.73,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.29195701580347155
+    },
+    {
+      "path_id": 96,
+      "ticker_source": "JPM",
+      "initial_price": 300.25,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.1141969959437518
+    },
+    {
+      "path_id": 97,
+      "ticker_source": "SPOT",
+      "initial_price": 430.9,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.2776677905595437
+    },
+    {
+      "path_id": 98,
+      "ticker_source": "MA",
+      "initial_price": 490.64,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.4092016884887985
+    },
+    {
+      "path_id": 99,
+      "ticker_source": "MSFT",
+      "initial_price": 405.21,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.01898500821931047
+    },
+    {
+      "path_id": 100,
+      "ticker_source": "UBER",
+      "initial_price": 74.7,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.4619549547274943
+    },
+    {
+      "path_id": 101,
+      "ticker_source": "XOM",
+      "initial_price": 151.57,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.014780924414519725
+    },
+    {
+      "path_id": 102,
+      "ticker_source": "SNAP",
+      "initial_price": 5.61,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.4631839625884401
+    },
+    {
+      "path_id": 103,
+      "ticker_source": "WMT",
+      "initial_price": 131.47,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.2999308716612289
+    },
+    {
+      "path_id": 104,
+      "ticker_source": "PYPL",
+      "initial_price": 45.23,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.043612202201128956
+    },
+    {
+      "path_id": 105,
+      "ticker_source": "META",
+      "initial_price": 616.63,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.15081217949687192
+    },
+    {
+      "path_id": 106,
+      "ticker_source": "AMC",
+      "initial_price": 1.33,
+      "annualized_volatility": 0.5,
+      "annualized_drift": -0.10337921473689805
+    },
+    {
+      "path_id": 107,
+      "ticker_source": "UNH",
+      "initial_price": 401.16,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.1412968328387072
+    },
+    {
+      "path_id": 108,
+      "ticker_source": "PYPL",
+      "initial_price": 45.23,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.07439736507654922
+    },
+    {
+      "path_id": 109,
+      "ticker_source": "GME",
+      "initial_price": 22.08,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.0775535836878228
+    },
+    {
+      "path_id": 110,
+      "ticker_source": "COIN",
+      "initial_price": 201.8,
+      "annualized_volatility": 0.5,
+      "annualized_drift": -0.16155261702922474
+    },
+    {
+      "path_id": 111,
+      "ticker_source": "PYPL",
+      "initial_price": 45.23,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.05877739253373741
+    },
+    {
+      "path_id": 112,
+      "ticker_source": "SPY",
+      "initial_price": 742.31,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.25492042047792135
+    },
+    {
+      "path_id": 113,
+      "ticker_source": "LYFT",
+      "initial_price": 13.68,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.014443817459478231
+    },
+    {
+      "path_id": 114,
+      "ticker_source": "AMZN",
+      "initial_price": 270.13,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.1817049646151478
+    },
+    {
+      "path_id": 115,
+      "ticker_source": "QQQ",
+      "initial_price": 714.71,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.366677783002551
+    },
+    {
+      "path_id": 116,
+      "ticker_source": "SPY",
+      "initial_price": 742.31,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.018586406041119524
+    },
+    {
+      "path_id": 117,
+      "ticker_source": "WMT",
+      "initial_price": 131.47,
+      "annualized_volatility": 0.5,
+      "annualized_drift": -0.17625592423490555
+    },
+    {
+      "path_id": 118,
+      "ticker_source": "LYFT",
+      "initial_price": 13.68,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.06383923660536359
+    },
+    {
+      "path_id": 119,
+      "ticker_source": "AMD",
+      "initial_price": 445.5,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.06429849577075467
+    },
+    {
+      "path_id": 120,
+      "ticker_source": "SPOT",
+      "initial_price": 430.9,
+      "annualized_volatility": 0.5,
+      "annualized_drift": -0.4689961228504251
+    },
+    {
+      "path_id": 121,
+      "ticker_source": "META",
+      "initial_price": 616.63,
+      "annualized_volatility": 0.5,
+      "annualized_drift": -0.16252865463906008
+    },
+    {
+      "path_id": 122,
+      "ticker_source": "QQQ",
+      "initial_price": 714.71,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.024657516284820588
+    },
+    {
+      "path_id": 123,
+      "ticker_source": "META",
+      "initial_price": 616.63,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.1976030396351119
+    },
+    {
+      "path_id": 124,
+      "ticker_source": "PYPL",
+      "initial_price": 45.23,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.3037323357286045
+    },
+    {
+      "path_id": 125,
+      "ticker_source": "PYPL",
+      "initial_price": 45.23,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.2750798682942537
+    },
+    {
+      "path_id": 126,
+      "ticker_source": "AMZN",
+      "initial_price": 270.13,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.19111381185233273
+    },
+    {
+      "path_id": 127,
+      "ticker_source": "DIS",
+      "initial_price": 104.9,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.16651582389939262
+    },
+    {
+      "path_id": 128,
+      "ticker_source": "BBBY",
+      "initial_price": 4.73,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.05394184742906695
+    },
+    {
+      "path_id": 129,
+      "ticker_source": "AAPL",
+      "initial_price": 298.87,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.11377203262253735
+    },
+    {
+      "path_id": 130,
+      "ticker_source": "AMZN",
+      "initial_price": 270.13,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.0013779278412390517
+    },
+    {
+      "path_id": 131,
+      "ticker_source": "SPOT",
+      "initial_price": 430.9,
+      "annualized_volatility": 0.5,
+      "annualized_drift": -0.3773315051436279
+    },
+    {
+      "path_id": 132,
+      "ticker_source": "BB",
+      "initial_price": 6.1,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.08523861000793666
+    },
+    {
+      "path_id": 133,
+      "ticker_source": "SNAP",
+      "initial_price": 5.61,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.1692332153563667
+    },
+    {
+      "path_id": 134,
+      "ticker_source": "SHOP",
+      "initial_price": 95.4,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.18055723180806393
+    },
+    {
+      "path_id": 135,
+      "ticker_source": "QQQ",
+      "initial_price": 714.71,
+      "annualized_volatility": 0.5,
+      "annualized_drift": -0.0679542070386099
+    },
+    {
+      "path_id": 136,
+      "ticker_source": "LYFT",
+      "initial_price": 13.68,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.3291764555274637
+    },
+    {
+      "path_id": 137,
+      "ticker_source": "JPM",
+      "initial_price": 300.25,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.110056971279187
+    },
+    {
+      "path_id": 138,
+      "ticker_source": "GOOGL",
+      "initial_price": 402.62,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.34955263543959203
+    },
+    {
+      "path_id": 139,
+      "ticker_source": "SNAP",
+      "initial_price": 5.61,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.09810105352712571
+    },
+    {
+      "path_id": 140,
+      "ticker_source": "GME",
+      "initial_price": 22.08,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.18055961315360897
+    },
+    {
+      "path_id": 141,
+      "ticker_source": "SPY",
+      "initial_price": 742.31,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.09906745470481648
+    },
+    {
+      "path_id": 142,
+      "ticker_source": "DIS",
+      "initial_price": 104.9,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.31665453776555447
+    },
+    {
+      "path_id": 143,
+      "ticker_source": "SHOP",
+      "initial_price": 95.4,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.3563645343744825
+    },
+    {
+      "path_id": 144,
+      "ticker_source": "JNJ",
+      "initial_price": 230.42,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.1750614212101374
+    },
+    {
+      "path_id": 145,
+      "ticker_source": "SHOP",
+      "initial_price": 95.4,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.35780214020789963
+    },
+    {
+      "path_id": 146,
+      "ticker_source": "XOM",
+      "initial_price": 151.57,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.2539846143973286
+    },
+    {
+      "path_id": 147,
+      "ticker_source": "BB",
+      "initial_price": 6.1,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.6078275112748319
+    },
+    {
+      "path_id": 148,
+      "ticker_source": "BB",
+      "initial_price": 6.1,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.0885215102665598
+    },
+    {
+      "path_id": 149,
+      "ticker_source": "PYPL",
+      "initial_price": 45.23,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.20456442414124848
+    },
+    {
+      "path_id": 150,
+      "ticker_source": "QQQ",
+      "initial_price": 714.71,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.2513649036751679
+    },
+    {
+      "path_id": 151,
+      "ticker_source": "BBBY",
+      "initial_price": 4.73,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.08299921672606801
+    },
+    {
+      "path_id": 152,
+      "ticker_source": "JNJ",
+      "initial_price": 230.42,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.31146659926749826
+    },
+    {
+      "path_id": 153,
+      "ticker_source": "AAPL",
+      "initial_price": 298.87,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.002481943633696748
+    },
+    {
+      "path_id": 154,
+      "ticker_source": "GME",
+      "initial_price": 22.08,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.2345973498502023
+    },
+    {
+      "path_id": 155,
+      "ticker_source": "V",
+      "initial_price": 320.31,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.32016620577360827
+    },
+    {
+      "path_id": 156,
+      "ticker_source": "COIN",
+      "initial_price": 201.8,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.04502804757752439
+    },
+    {
+      "path_id": 157,
+      "ticker_source": "PYPL",
+      "initial_price": 45.23,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.2604233314055962
+    },
+    {
+      "path_id": 158,
+      "ticker_source": "AMC",
+      "initial_price": 1.33,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.144095222907214
+    },
+    {
+      "path_id": 159,
+      "ticker_source": "DIS",
+      "initial_price": 104.9,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.5672876452272676
+    },
+    {
+      "path_id": 160,
+      "ticker_source": "HOOD",
+      "initial_price": 76.75,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.015734236736385687
+    },
+    {
+      "path_id": 161,
+      "ticker_source": "WMT",
+      "initial_price": 131.47,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.11048944972698291
+    },
+    {
+      "path_id": 162,
+      "ticker_source": "JNJ",
+      "initial_price": 230.42,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.26394356865788715
+    },
+    {
+      "path_id": 163,
+      "ticker_source": "NVDA",
+      "initial_price": 225.83,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.05953513082022202
+    },
+    {
+      "path_id": 164,
+      "ticker_source": "INTC",
+      "initial_price": 120.29,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.04387002082044709
+    },
+    {
+      "path_id": 165,
+      "ticker_source": "V",
+      "initial_price": 320.31,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.11627913054246801
+    },
+    {
+      "path_id": 166,
+      "ticker_source": "JNJ",
+      "initial_price": 230.42,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.05672867734729255
+    },
+    {
+      "path_id": 167,
+      "ticker_source": "JNJ",
+      "initial_price": 230.42,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.13893224868190057
+    },
+    {
+      "path_id": 168,
+      "ticker_source": "COIN",
+      "initial_price": 201.8,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.08729301435001387
+    },
+    {
+      "path_id": 169,
+      "ticker_source": "SNAP",
+      "initial_price": 5.61,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.04234993534189742
+    },
+    {
+      "path_id": 170,
+      "ticker_source": "HOOD",
+      "initial_price": 76.75,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.2815973504522502
+    },
+    {
+      "path_id": 171,
+      "ticker_source": "DIS",
+      "initial_price": 104.9,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.03991981487881674
+    },
+    {
+      "path_id": 172,
+      "ticker_source": "AMC",
+      "initial_price": 1.33,
+      "annualized_volatility": 0.8,
+      "annualized_drift": -0.16943199199422193
+    },
+    {
+      "path_id": 173,
+      "ticker_source": "DIS",
+      "initial_price": 104.9,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.3227123044837381
+    },
+    {
+      "path_id": 174,
+      "ticker_source": "SPOT",
+      "initial_price": 430.9,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.050825674175624544
+    },
+    {
+      "path_id": 175,
+      "ticker_source": "XOM",
+      "initial_price": 151.57,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.17345963289476685
+    },
+    {
+      "path_id": 176,
+      "ticker_source": "AMZN",
+      "initial_price": 270.13,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.19038384401868835
+    },
+    {
+      "path_id": 177,
+      "ticker_source": "QQQ",
+      "initial_price": 714.71,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.14715556358239285
+    },
+    {
+      "path_id": 178,
+      "ticker_source": "AMD",
+      "initial_price": 445.5,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.42349714541767686
+    },
+    {
+      "path_id": 179,
+      "ticker_source": "JPM",
+      "initial_price": 300.25,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.4347469812032037
+    },
+    {
+      "path_id": 180,
+      "ticker_source": "MA",
+      "initial_price": 490.64,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.44183401642976233
+    },
+    {
+      "path_id": 181,
+      "ticker_source": "ARKK",
+      "initial_price": 78.05,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.23107917185470023
+    },
+    {
+      "path_id": 182,
+      "ticker_source": "SPY",
+      "initial_price": 742.31,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.236831329580529
+    },
+    {
+      "path_id": 183,
+      "ticker_source": "AMZN",
+      "initial_price": 270.13,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.40472545560165235
+    },
+    {
+      "path_id": 184,
+      "ticker_source": "LYFT",
+      "initial_price": 13.68,
+      "annualized_volatility": 0.5,
+      "annualized_drift": -0.11337973033958189
+    },
+    {
+      "path_id": 185,
+      "ticker_source": "SHOP",
+      "initial_price": 95.4,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.13882071824640685
+    },
+    {
+      "path_id": 186,
+      "ticker_source": "LYFT",
+      "initial_price": 13.68,
+      "annualized_volatility": 0.2,
+      "annualized_drift": 0.21419579491417723
+    },
+    {
+      "path_id": 187,
+      "ticker_source": "MSFT",
+      "initial_price": 405.21,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.1510625200715977
+    },
+    {
+      "path_id": 188,
+      "ticker_source": "TSLA",
+      "initial_price": 445.27,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.07353518307839314
+    },
+    {
+      "path_id": 189,
+      "ticker_source": "BB",
+      "initial_price": 6.1,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.00503011220328739
+    },
+    {
+      "path_id": 190,
+      "ticker_source": "COIN",
+      "initial_price": 201.8,
+      "annualized_volatility": 0.5,
+      "annualized_drift": -0.23346520538147475
+    },
+    {
+      "path_id": 191,
+      "ticker_source": "MA",
+      "initial_price": 490.64,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.15981596412637067
+    },
+    {
+      "path_id": 192,
+      "ticker_source": "QQQ",
+      "initial_price": 714.71,
+      "annualized_volatility": 0.35,
+      "annualized_drift": -0.08831619440440334
+    },
+    {
+      "path_id": 193,
+      "ticker_source": "NFLX",
+      "initial_price": 87.56,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.2693117721956289
+    },
+    {
+      "path_id": 194,
+      "ticker_source": "WMT",
+      "initial_price": 131.47,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.16470100508939173
+    },
+    {
+      "path_id": 195,
+      "ticker_source": "BBBY",
+      "initial_price": 4.73,
+      "annualized_volatility": 0.35,
+      "annualized_drift": 0.3323316868212557
+    },
+    {
+      "path_id": 196,
+      "ticker_source": "MA",
+      "initial_price": 490.64,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.06981705091046432
+    },
+    {
+      "path_id": 197,
+      "ticker_source": "V",
+      "initial_price": 320.31,
+      "annualized_volatility": 0.8,
+      "annualized_drift": 0.23280563116149422
+    },
+    {
+      "path_id": 198,
+      "ticker_source": "WMT",
+      "initial_price": 131.47,
+      "annualized_volatility": 0.5,
+      "annualized_drift": 0.29536254533642864
+    },
+    {
+      "path_id": 199,
+      "ticker_source": "PYPL",
+      "initial_price": 45.23,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.3691492865477873
+    },
+    {
+      "path_id": 200,
+      "ticker_source": "ARKK",
+      "initial_price": 78.05,
+      "annualized_volatility": 0.2,
+      "annualized_drift": -0.041730875247531066
+    }
+  ],
+  "summary": [
+    {
+      "model": "GradientBoosting",
+      "median_R2": 0.0461587786102971,
+      "median_MAPE": 4.72199229386259,
+      "median_Theil_U": 2.0756149151719407,
+      "beats_persistence_pct": 1.0
+    },
+    {
+      "model": "Persistence",
+      "median_R2": 0.8217867888623458,
+      "median_MAPE": 1.9050883651798967,
+      "median_Theil_U": 1.0,
+      "beats_persistence_pct": 0.0
+    },
+    {
+      "model": "RandomForest",
+      "median_R2": 0.19575372265246255,
+      "median_MAPE": 4.212993154570041,
+      "median_Theil_U": 1.8858947272316766,
+      "beats_persistence_pct": 0.5
+    },
+    {
+      "model": "Ridge",
+      "median_R2": 0.7424632046512321,
+      "median_MAPE": 2.4045007506343374,
+      "median_Theil_U": 1.1342266465553268,
+      "beats_persistence_pct": 10.0
+    },
+    {
+      "model": "SVR",
+      "median_R2": -1.0445037566171445,
+      "median_MAPE": 7.374360671057793,
+      "median_Theil_U": 3.530315633330254,
+      "beats_persistence_pct": 0.0
+    },
+    {
+      "model": "Selected (best of 5)",
+      "median_R2": 0.7500855341867485,
+      "median_MAPE": 2.39586690609659,
+      "median_Theil_U": 1.1210422636153483,
+      "beats_persistence_pct": 11.0
+    },
+    {
+      "model": "XGBoost",
+      "median_R2": -0.14224042056412844,
+      "median_MAPE": 4.889724133880055,
+      "median_Theil_U": 2.2816950432855947,
+      "beats_persistence_pct": 0.0
+    }
+  ],
+  "note": "This script provides a reproducible implementation of the protocol specified in the paper. Its output should replace any earlier unarchived synthetic results if exact historical provenance cannot be established."
+}

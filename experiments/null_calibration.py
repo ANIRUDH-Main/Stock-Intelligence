@@ -171,7 +171,7 @@ def add_features(df: pd.DataFrame) -> pd.DataFrame:
     loss = -delta.clip(upper=0)
     avg_gain = gain.groupby(out["path_id"]).transform(lambda s: s.rolling(14).mean())
     avg_loss = loss.groupby(out["path_id"]).transform(lambda s: s.rolling(14).mean())
-    rs = avg_gain / avg_loss.replace(0, np.nan)
+    rs = avg_gain / (avg_loss + 1e-10)
     out["rsi"] = 100 - (100 / (1 + rs))
 
     ema12 = g["Close"].transform(lambda s: s.ewm(span=12, adjust=False).mean())
@@ -186,9 +186,9 @@ def add_features(df: pd.DataFrame) -> pd.DataFrame:
     sd = g["Close"].transform(lambda s: s.rolling(20).std())
     out["bb_upper"] = mid + 2 * sd
     out["bb_lower"] = mid - 2 * sd
-    out["bb_width"] = (out["bb_upper"] - out["bb_lower"]) / mid
+    out["bb_width"] = (out["bb_upper"] - out["bb_lower"]) / (mid + 1e-10)
     out["bb_position"] = (out["Close"] - out["bb_lower"]) / (
-        out["bb_upper"] - out["bb_lower"]
+        out["bb_upper"] - out["bb_lower"] + 1e-10
     )
 
     out["close_to_ema20"] = out["Close"] / out["ema_20"]
